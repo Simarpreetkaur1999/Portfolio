@@ -1,0 +1,44 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .animate-fadeIn.delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .animate-fadeIn.delay-2s {
+    animation-delay: 2s;
+  }
+  
+  .animate-fadeIn.delay-3s {
+    animation-delay: 3s;
+  }
+  
+  .animate-fadeIn.delay-4s {
+    animation-delay: 4s;
+  }
+  
+  .animate-fadeIn.delay-5s {
+    animation-delay: 5s;
+  }
+  
+  .skill-bar {
+    width: 0;
+    transition: width 2s ease-out;
+  }
+  
+  .skill-bar.animate-bar {
+    width: var(--skill-level);
+  }
+  
